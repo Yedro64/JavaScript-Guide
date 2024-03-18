@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/monokai-sublime.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <title>JS Guide</title>
+</head>
+<body>
+    
+    <div class="header">
+        <h1 class="titulo">GUÍA PRÁCTICA JAVA SCRIPT</h1>
+        <img src="/Images/js.png" alt="">
+        
+        <select id="lista-temas" onchange="mostrarContenido()">
+            <option hidden="0">Temas</option>
+            <option value="tema1">Condicionales</option>
+            <option value="tema2">Bucles</option>
+            <option value="tema3">Arreglos/Matrices</option>
+            <option value="tema4">Objetos</option>  
+        </select>
+        <button class="boton-head">About</button>
+
+    </div>
+
+
+    <button id="boton-volver" onclick="volverAlInicio()" style="display: none;">Volver al inicio</button>
+
+    <div id="contenido-inicio" class="contenido">
+      <!-- Contenido del inicio -->
+      <h2>Bienvenido a la guía de prácticos sobre el Lenguaje de Java Script</h2>
+      <p>Puedes acceder a los temas de tu interés, visualizar la téoria y los distintos codigos que puedes copiar para utilizarlos.</p>
+    </div>
+    
+
+
+    <div id="contenido-tema1" class="contenido" style="display: none;">
+        <h2> • Estructuras Condicionales </h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati voluptates repellat,
+             corrupti, repudiandae illo facere neque eum accusantium vero nesciunt consectetur est unde soluta quasi 
+             nam cumque ut tempore dolorum facilis minus? Eaque a,
+              doloremque possimus soluta asperiores eos ratione. Expedita voluptate placeat reiciendis.
+        </p>
+
+        <div class="contenedor-codigo">
+            <pre><code class="hljs">
+        function saludar() {
+          console.log("¡Hola!");
+        }
+        </code></pre>
+        <span class="copiar-codigo">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+            <span class="mensaje-copiado">¡Copiado!</span>
+        </span>
+      </div>
+
+        <h2>• Ejemplo de copiar código</h2>
+        <div class="contenedor-codigo">
+            <pre><code class="hljs">
+          function miFuncion() {
+            // Tu código
+          }
+            </code></pre>
+            <span class="copiar-codigo">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                <span class="mensaje-copiado">¡Copiado!</span>
+            </span>
+          </div>
+  <script src="/JS/copiar_codigo.js"></script>
+</div>
+
+
+<div id="contenido-tema2" class="contenido" style="display: none;">
+  <!-- Contenido del tema 2 -->
+  <h2>Tema 2</h2>
+  <p>Contenido del tema 2...</p>
+</div>
+
+    <script defer src="/JS/cambiar-contenido.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="JS/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+</body>
+</html>
