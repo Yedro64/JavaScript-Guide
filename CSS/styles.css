@@ -69,6 +69,13 @@ p{
   width: 130px;
   height: 30px;
 }
+#lista-temas:hover {
+  /*background-color: #4690ff; /* Cambia el color de fondo al pasar el mouse */
+  color: #000000;
+ 
+  background-color: #ffffff;
+  
+}
 .boton-head{
   position: relative;
   top: 59%;
@@ -81,6 +88,13 @@ p{
   border: 1px solid #555555;
   width: 130px;
   height: 30px;
+}
+.boton-head:hover {
+  /*background-color: #4690ff; /* Cambia el color de fondo al pasar el mouse */
+  color: #000000;
+ 
+  background-color: #ffffff;
+  
 }
 
 /* PARA COPIAR CODIGO */
@@ -141,14 +155,14 @@ p{
   width: 110px;
   height: 28px;
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  border-radius: 8px; /* Borde redondeado */
+  border-radius: 13px; /* Borde redondeado */
   background-color: #efefef;
   transition: background-color 0.3s ease; /* Transición suave del color de fondo */
 }
 
 #boton-volver:hover {
   background-color: #4690ff; /* Cambia el color de fondo al pasar el mouse */
-  color: #f7f7f7;
+  color: #ffffff;
   border: none;
   border-bottom: 2px solid #000000;
 }
