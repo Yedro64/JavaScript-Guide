@@ -16,7 +16,7 @@ document.addEventListener("scroll", function () {
             // Estás en la parte superior de la página
             header.style.backgroundColor = '#1c4480'; // Restaura el color original
             title.style.color = '#ffffff'; // Restaura el color del título
-            header.style.borderBottomColor = '#b2941b58';
+            header.style.borderBottomColor = '#b2941b';
         } else {
             // Scrolling hacia arriba
             var opacity = Math.min(1, 1.0 + scrollPosition / 500); // Limita la opacidad a un máximo de 1
