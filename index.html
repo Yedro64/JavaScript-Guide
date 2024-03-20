@@ -11,10 +11,10 @@
 </head>
 <body>
     
-    <div class="header">
+    <header class="header-container">
         <h1 class="titulo">GUÍA PRÁCTICA JAVA SCRIPT</h1>
         <img src="/Images/js.png" alt="">
-        
+       
         <select id="lista-temas" onchange="mostrarContenido()">
             <option hidden="0">Temas</option>
             <option value="tema1">Condicionales</option>
@@ -23,12 +23,14 @@
             <option value="tema4">Objetos</option>  
         </select>
         <button class="boton-head">About</button>
+        <button id="boton-volver" onclick="volverAlInicio()" style="display: none;">Volver al inicio</button>
+        <script src="/JS/scroll.js"></script>
+        <script src="/JS/header-vanish.js"></script>
+    </header>
 
-    </div>
 
-
-    <button id="boton-volver" onclick="volverAlInicio()" style="display: none;">Volver al inicio</button>
-
+    
+<section class="bajar">
     <div id="contenido-inicio" class="contenido">
       <!-- Contenido del inicio -->
       <h2>JavaScript como lenguaje de programación</h2>
@@ -190,6 +192,7 @@
   <p>Contenido del tema 2...</p>
 </div>
 
+</section>
     <script defer src="/JS/cambiar-contenido.js"></script>
     <script>hljs.highlightAll();</script>
     <script src="JS/highlight.min.js"></script>

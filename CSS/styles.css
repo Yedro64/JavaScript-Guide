@@ -38,17 +38,27 @@ ul li{
     color: #dfdfdf;
 }
 
-.header{
+header{
+  position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+
     border-bottom: 3px solid #b2941b;
+
     width: 100%;
     height: 155px;
     background-color: #1c4480;
 
-    
 }
-.header img{
+.header-container label{
+  cursor: pointer;
+  display: none;
+}
+header img{
   position: absolute;
-  top: 49px;
+  top: 30px;
   left: 47%;
   transform: translateX(-50%);
   margin-left: 260px;
@@ -116,9 +126,6 @@ ul li{
     top: 3vb;
     right: 16%;
     transform: translate(-50%, -50%);
-    
-    
-    
     cursor: pointer;
     color: #dbdbdb;
     transition: color 0.2s ease-in-out;
@@ -150,10 +157,12 @@ ul li{
   }
   
   #boton-volver{
-    margin: 0 auto;
+    position: relative;
+  top: 41%;
+  left: 20%;
+  transform: translate(-50%, -50%);
     font-weight: 500;
-    margin-top: 15px;
-    border: 1px solid #a2a2a2;
+ 
 
   color: #000000;
   /*padding: 15px 32px; /* Espaciado interno */
@@ -165,13 +174,17 @@ ul li{
   height: 28px;
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
   border-radius: 13px; /* Borde redondeado */
-  background-color: #efefef;
+  background-color: #f7d23e;
   transition: background-color 0.3s ease; /* Transición suave del color de fondo */
 }
 
 #boton-volver:hover {
-  background-color: #b8b8b8; /* Cambia el color de fondo al pasar el mouse */
+  background-color: #c2a018; /* Cambia el color de fondo al pasar el mouse */
   color: #ffffff;
   border: none;
   border-bottom: 2px solid #000000;
+}
+
+.bajar {
+  margin-top: 180px;
 }
