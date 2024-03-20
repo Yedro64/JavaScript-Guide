@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="CSS/monokai-sublime.css">
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script defer src="/JS/copiar_codigo.js"></script>>
     <title>JS Guide</title>
 </head>
 <body>
@@ -30,37 +31,76 @@
 
     <div id="contenido-inicio" class="contenido">
       <!-- Contenido del inicio -->
-      <h2>Bienvenido a la guía de prácticos sobre el Lenguaje de Java Script</h2>
-      <p>Puedes acceder a los temas de tu interés, visualizar la téoria y los distintos codigos que puedes copiar para utilizarlos.</p>
+      <h2>JavaScript como lenguaje de programación</h2>
+      <p>JavaScript es el centro de todo porque es un
+        lenguaje de programación interpretado por el
+        propio navegador (Chrome, Firefox, Opera, IE, y
+        otros), sin necesidad de nada más en absoluto.</p>
+        <p>Entre las tantas cosas que podemos hacer con
+          JavaScript se pueden mencionar:
+          <ul>
+            <li>Abrir cuadros de diálogo.</li>
+            <li>Mostrar mensajes.</li>
+            <li>Validar datos en un formulario.</li>
+            <li>Hacer una galería de imágenes.</li>
+          </ul>
+        </p>
+        <h2>Implementar JS en línea</h2>
     </div>
     
 
 
     <div id="contenido-tema1" class="contenido" style="display: none;">
-        <h2> • Estructuras Condicionales </h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati voluptates repellat,
-             corrupti, repudiandae illo facere neque eum accusantium vero nesciunt consectetur est unde soluta quasi 
-             nam cumque ut tempore dolorum facilis minus? Eaque a,
-              doloremque possimus soluta asperiores eos ratione. Expedita voluptate placeat reiciendis.
+        <h2> • Estructuras Condicionales Avanzadas </h2>
+        <h3>Anidamiento de condicionales</h3>
+        <p>Un condicional if se puede escribir dentro del
+          bloque de otro if (en su camino principal o en el
+          alternativo) para generar múltiples caminos de
+          ejecución.
+          Mediante este anidamiento de condicionales, el código comenzará a "ramificarse". 
+
         </p>
 
-        <div class="contenedor-codigo">
+        <div class="">
             <pre><code class="hljs">
-        function saludar() {
-          console.log("¡Hola!");
-        }
+        // Solicitar la edad del usuario
+        Si Edad es mayor o igual a 20 entonces
+        "Solicitar ahora el nombre del usuario"
+        Si nombre es igual a Pedro entonces
+        "Mostrar un mensaje de Saludo utilizando su nombre"
+        Sino
+        "Mostrar el mensaje: Ud tiene mas de 20 años, pero no eres Pedro"
+        Fin
+        Sino
+        "Mostrar en una alerta 'Eres menor de 20 años'"
+        Fin
         </code></pre>
-        <span class="copiar-codigo">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
-            <span class="mensaje-copiado">¡Copiado!</span>
-        </span>
+        
       </div>
 
-        <h2>• Ejemplo de copiar código</h2>
+      <br>
+        <h3>Código de anidamiento</h3>
+        <p>Veamos a continuación, cómo 
+          convertimos el pseudocódigo de 
+          la diapositiva anterior, en una 
+          sentencia 100% funcional en 
+          JavaScript.
+          </p>
         <div class="contenedor-codigo">
             <pre><code class="hljs">
-          function miFuncion() {
-            // Tu código
+          //Solicitar la edad del usuario
+
+          let edad = prompt("Ingresa tu edad: ")
+
+          if (edad >= 20) {
+              let nombre = prompt("Ingresa tu nombre: ")
+              if (nombre === "Pedro") {
+                  console.log("Hola", nombre)
+              } else {
+                  console.warn("Tienes mas de 20 años, pero no eres Pedro")
+              }    
+          } else {
+              console.error("Eres menor de 20 años.")
           }
             </code></pre>
             <span class="copiar-codigo">
@@ -68,7 +108,79 @@
                 <span class="mensaje-copiado">¡Copiado!</span>
             </span>
           </div>
-  <script src="/JS/copiar_codigo.js"></script>
+  
+
+
+  <br>
+<h2>• Condicional Múltiple</h2>
+<h3>La cláusula switch</h3>
+<p> La cláusula switch, en JavaScript, es una 
+  estructura de control que permite evaluar una 
+  expresión y comparar su valor con múltiples 
+  casos posibles. 
+  </p>
+  <p>Cuando se encuentra un caso que coincide con el 
+    valor de la expresión, se ejecuta el bloque de 
+    código correspondiente a ese caso.</p>
+    <h3>Sintaxis</h3>
+<div class="contenedor-codigo">
+    <pre><code class="hljs">
+  switch (condicion) {
+    case 1:
+      // codigo a ejecutar
+      break;
+    case 2:
+      // codigo a ejecutar
+      break;
+    case 3:
+      // codigo a ejecutar
+      break;
+  }
+    </code></pre>
+  
+  <p>Si ninguno de los casos coincide, se puede 
+    proporcionar un caso default (por defecto), que 
+    se ejecutará si no hay coincidencias. Veamos el 
+    siguiente ejemplo:</p>
+
+    <div class="contenedor-codigo">
+      <pre><code class="hljs">
+        
+          let dia = 3;
+          let nombreDelDia = '';
+
+          switch (dia) {
+            case 1:
+              nombreDelDia = 'Lunes';
+              break;
+            case 2:
+              nombreDelDia = 'Martes';
+              break;
+            case 3:
+              nombreDelDia = 'Miercoles';
+              break;
+            case 4; 
+              nombreDelDia = 'Jueves';
+              break;
+            case 5; 
+              nombreDelDia = 'Viernes';
+              break;
+            default:
+              nombreDelDia = 'Día no valido';
+          }
+
+          console.log('Hoy es: ', nombreDelDia);
+     
+       </code></pre>
+            <span class="copiar-codigo">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                <span class="mensaje-copiado">¡Copiado!</span>
+            </span>
+          </div>
+
+
+
+
 </div>
 
 

@@ -18,12 +18,21 @@ body{
 }
 
 h2{
-    margin-left: 200px;
+    margin-left: 220px;
     color: #f9f9f9;
 }
-
+h3{
+  margin-left: 235px;
+    color: #f9f9f9; 
+}
 p{
-    margin-left: 220px;
+    margin-left: 235px;
+    margin-right: 235px;
+    font-size: 18px;
+    color: #dfdfdf;
+}
+ul li{
+  margin-left: 220px;
     margin-right: 220px;
     font-size: 18px;
     color: #dfdfdf;
@@ -39,10 +48,10 @@ p{
 }
 .header img{
   position: absolute;
-  top: 32px;
-  left: 50%;
+  top: 49px;
+  left: 47%;
   transform: translateX(-50%);
-  margin-left: 212px;
+  margin-left: 260px;
   
   z-index: 999;
 
@@ -104,12 +113,12 @@ p{
   
   .copiar-codigo {
     position: absolute;
-    top: 85%;
+    top: 3vb;
     right: 16%;
     transform: translate(-50%, -50%);
     
     
-    padding: 0;
+    
     cursor: pointer;
     color: #dbdbdb;
     transition: color 0.2s ease-in-out;
@@ -129,7 +138,7 @@ p{
   .mensaje-copiado {
     display: none;
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
     transform: translate(50%, -50%);
     padding: 10px;
@@ -161,7 +170,7 @@ p{
 }
 
 #boton-volver:hover {
-  background-color: #4690ff; /* Cambia el color de fondo al pasar el mouse */
+  background-color: #b8b8b8; /* Cambia el color de fondo al pasar el mouse */
   color: #ffffff;
   border: none;
   border-bottom: 2px solid #000000;
